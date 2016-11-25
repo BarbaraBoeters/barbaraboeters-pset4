@@ -31,7 +31,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe an item to remove it you sucker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="but-LA-qY7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe an item to remove it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="but-LA-qY7">
                                         <rect key="frame" x="33" y="65" width="309" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
@@ -93,7 +93,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="label" destination="Ufy-pW-PGw" id="ggz-kW-ziH"/>
+                                            <outlet property="label" destination="Ufy-pW-PGw" id="Urz-6a-rpf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,7 +115,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addText" destination="4N3-di-MKZ" id="Def-00-pc9"/>
+                        <outlet property="addText" destination="4N3-di-MKZ" id="RUE-ZV-c31"/>
                         <outlet property="inputText" destination="jGC-oR-Bqf" id="KJL-Vz-HIF"/>
                         <outlet property="tableView" destination="PCu-m1-LXE" id="7uk-xe-pzd"/>
                     </connections>

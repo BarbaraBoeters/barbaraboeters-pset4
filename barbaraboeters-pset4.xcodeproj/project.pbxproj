@@ -15,6 +15,7 @@
 		1AE9CF0A1DE44E6300B8A8C1 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE9CEFD1DE44E5D00B8A8C1 /* SQLite.framework */; };
 		1AE9CF0C1DE4567A00B8A8C1 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF0B1DE4567A00B8A8C1 /* DatabaseHelper.swift */; };
 		1AE9CF0E1DE4736E00B8A8C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF0D1DE4736E00B8A8C1 /* CustomCell.swift */; };
+		1AE9CF101DE63E0B00B8A8C1 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF0F1DE63E0B00B8A8C1 /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		1AE9CEF21DE44E5D00B8A8C1 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		1AE9CF0B1DE4567A00B8A8C1 /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		1AE9CF0D1DE4736E00B8A8C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		1AE9CF0F1DE63E0B00B8A8C1 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				1A1484791DE32CDB002A0174 /* AppDelegate.swift */,
 				1A14847B1DE32CDB002A0174 /* ViewController.swift */,
 				1A14847D1DE32CDB002A0174 /* Main.storyboard */,
+				1AE9CF0F1DE63E0B00B8A8C1 /* List.swift */,
 				1AE9CF0D1DE4736E00B8A8C1 /* CustomCell.swift */,
 				1AE9CF0B1DE4567A00B8A8C1 /* DatabaseHelper.swift */,
 				1A1484801DE32CDB002A0174 /* Assets.xcassets */,
@@ -274,6 +277,7 @@
 				1A14847C1DE32CDB002A0174 /* ViewController.swift in Sources */,
 				1AE9CF0C1DE4567A00B8A8C1 /* DatabaseHelper.swift in Sources */,
 				1AE9CF0E1DE4736E00B8A8C1 /* CustomCell.swift in Sources */,
+				1AE9CF101DE63E0B00B8A8C1 /* List.swift in Sources */,
 				1A14847A1DE32CDB002A0174 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
