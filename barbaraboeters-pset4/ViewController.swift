@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private let db = DatabaseHelper()
     private var selectedTodo: Int?
     private var items = [List]()
+    var checked = [Bool]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +42,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        inputText.text = items[indexPath.row].item
-        // label.text = items[indexPath.row].item
         selectedTodo = indexPath.row
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,9 +53,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var label: UILabel?
         label = cell.viewWithTag(1) as? UILabel
         cell.label?.text = items[indexPath.row].item
+        print(items[indexPath.row].check)
+        cell.checkmark.isOn = items[indexPath.row].check
         return cell
     }
-    
+
     // http://www.ioscreator.com/tutorials/delete-rows-table-view-ios8-swift
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {

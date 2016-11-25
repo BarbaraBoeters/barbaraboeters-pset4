@@ -11,14 +11,17 @@ import Foundation
 class List {
     let id: Int64?
     var item: String
+    let check: Bool
     
     init(id:Int64) {
         self.id = id
         item = ""
+        self.check = false
     }
     
-    init(id:Int64, item:String) {
+    init(id:Int64, item:String, check:Bool) {
         self.id = id
         self.item = item
+        self.check = check
     }
 }

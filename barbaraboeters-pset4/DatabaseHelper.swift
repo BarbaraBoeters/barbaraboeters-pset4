@@ -16,6 +16,7 @@ class DatabaseHelper {
     private let list = Table("list")
     private let id = Expression<Int64>("id")
     private let item = Expression<String?>("item")
+    private let check = Expression<Bool>("check")
     
     init?() {
         do {
@@ -30,7 +31,9 @@ class DatabaseHelper {
     private func setupDatabase() throws {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         do {
-            db = try Connection("\(path)/db.sqlite3")
+            // db = try Connection("\(path)/db.sqlite3")
+            db = try Connection("\(path)/db3.sqlite3")
+
             try createTable()
         } catch {
             throw error
@@ -43,6 +46,7 @@ class DatabaseHelper {
                 t in
                 t.column(id, primaryKey: .autoincrement)
                 t.column(item)
+                t.column(check)
             })
         } catch {
             throw error
@@ -51,7 +55,7 @@ class DatabaseHelper {
 
     func addItem(citem: String) throws -> Int64? {
         do {
-            let insert = list.insert(item <- citem)
+            let insert = list.insert(item <- citem, check <- false)
             let id = try db!.run(insert)
             print(id)
             print(insert.asSQL())
@@ -65,7 +69,7 @@ class DatabaseHelper {
         var items = [List]()
         do {
             for list in try db!.prepare(self.list) {
-                items.append(List(id: list[id], item: list[item]!))
+                items.append(List(id: list[id], item: list[item]!, check: list[check]))
             }
         } catch {
             print("Select failed")
@@ -82,6 +86,15 @@ class DatabaseHelper {
             print("Delete failed")
         }
         return false
+    }
+    
+    func updateItem(name: String, newCheck: Bool) {
+        do {
+            let itemTemp = list.filter(item == name)
+            try db!.run(itemTemp.update(check <- newCheck))
+        } catch {
+            print("update failed")
+        }
     }
     
 }
