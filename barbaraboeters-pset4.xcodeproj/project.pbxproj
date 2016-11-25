@@ -16,6 +16,7 @@
 		1AE9CF0C1DE4567A00B8A8C1 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF0B1DE4567A00B8A8C1 /* DatabaseHelper.swift */; };
 		1AE9CF0E1DE4736E00B8A8C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF0D1DE4736E00B8A8C1 /* CustomCell.swift */; };
 		1AE9CF101DE63E0B00B8A8C1 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF0F1DE63E0B00B8A8C1 /* List.swift */; };
+		1AE9CF121DE882B500B8A8C1 /* README.MD in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9CF111DE882B500B8A8C1 /* README.MD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		1AE9CF0B1DE4567A00B8A8C1 /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		1AE9CF0D1DE4736E00B8A8C1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1AE9CF0F1DE63E0B00B8A8C1 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		1AE9CF111DE882B500B8A8C1 /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		1A14846D1DE32CDB002A0174 = {
 			isa = PBXGroup;
 			children = (
+				1AE9CF111DE882B500B8A8C1 /* README.MD */,
 				1A1484781DE32CDB002A0174 /* barbaraboeters-pset4 */,
 				1A1484771DE32CDB002A0174 /* Products */,
 				1AE9CEF21DE44E5D00B8A8C1 /* SQLite.xcodeproj */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE9CF121DE882B500B8A8C1 /* README.MD in Sources */,
 				1A14847C1DE32CDB002A0174 /* ViewController.swift in Sources */,
 				1AE9CF0C1DE4567A00B8A8C1 /* DatabaseHelper.swift in Sources */,
 				1AE9CF0E1DE4736E00B8A8C1 /* CustomCell.swift in Sources */,

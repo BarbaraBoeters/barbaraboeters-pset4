@@ -27,7 +27,6 @@ class DatabaseHelper {
         }
     }
     
-    
     private func setupDatabase() throws {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         do {
@@ -96,5 +95,4 @@ class DatabaseHelper {
             print("update failed")
         }
     }
-    
 }

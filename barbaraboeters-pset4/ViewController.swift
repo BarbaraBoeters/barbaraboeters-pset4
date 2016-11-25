@@ -58,7 +58,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
 
-    // http://www.ioscreator.com/tutorials/delete-rows-table-view-ios8-swift
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
             selectedTodo = indexPath.row
